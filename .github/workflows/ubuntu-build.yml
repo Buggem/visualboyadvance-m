@@ -25,5 +25,5 @@ jobs:
       - name: Install
         run: sudo ninja -C build install
       
-      - name: Check
+      - name: Read Contents
         run: dir
