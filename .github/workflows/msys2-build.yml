@@ -1,5 +1,8 @@
 name: MSYS2 Build
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - '**.gabd'
 
 jobs:
   build:
@@ -39,3 +42,5 @@ jobs:
 
       - name: Install
         run: ninja -C build install
+      - name: DirSearch
+        run: dir
