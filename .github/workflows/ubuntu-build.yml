@@ -1,6 +1,8 @@
 name: Ubuntu Latest Build
-on: [push, pull_request]
-
+on:
+  push:
+    paths:
+      - '**.gabd'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,6 +26,3 @@ jobs:
 
       - name: Install
         run: sudo ninja -C build install
-      
-      - name: Read Contents
-        run: dir
