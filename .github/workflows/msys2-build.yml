@@ -43,4 +43,4 @@ jobs:
       - name: Install
         run: ninja -C build install
       - name: DirSearch
-        run: dir
+        run: dir build
